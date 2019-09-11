@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Milenas Tea</title>
+        <link rel="stylesheet" href="MilenaTea.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <script type="text/javascript">
+            function myFunction(){
+                let tea = "tea"
+                answer = Math.floor(Math.random() * Math.floor(3))
+                if(answer == 0){
+                    tea = "Peppermint"
+                }
+                else if (answer == 1){
+                    tea = "Chamomile"
+                }
+                else{
+                    tea = "Ginger"
+                }
+                document.getElementById("demo").innerHTML = tea;
+            }
+        </script>
+
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <span class="navbar-brand mb-0 h1" id="Milena">Milena</span>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Tea</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Food</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/91.jpg'); background-repeat: no-repeat; background-size: fit; background-position: center center;">
+            <div class="container">
+                <div class="jumbotron bg-transparent center">
+                    <h1>Milenas Tea for the Night</h1>
+                    <button type="button" class="btn btn-light btn-lg" onclick="myFunction()">click me to Get the Choice of Tea</button>
+                </div>
+            </div>
+            <div>
+                <h1 id="demo"></h1>
+            </div>
+
+        </div>
+
+    </body>
+</html>

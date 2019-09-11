@@ -1,0 +1,19 @@
+#Milena {
+    color: white;
+}
+
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+
+.jumbotron {
+    color: white;
+}
+
+#demo {
+    color: white;
+    text-align: center;
+}
