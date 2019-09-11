@@ -3,55 +3,55 @@
     <head>
         <meta charset="utf-8">
         <title>Milenas Tea</title>
+        <script src="Milena.js"></script>
         <link rel="stylesheet" href="MilenaTea.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-        <script type="text/javascript">
-            function myFunction(){
-                let tea = "tea"
-                answer = Math.floor(Math.random() * Math.floor(3))
-                if(answer == 0){
-                    tea = "Peppermint"
-                }
-                else if (answer == 1){
-                    tea = "Chamomile"
-                }
-                else{
-                    tea = "Ginger"
-                }
-                document.getElementById("demo").innerHTML = tea;
-            }
-        </script>
-
     </head>
-    <body>
+    <body class="stress">
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-            <span class="navbar-brand mb-0 h1" id="Milena">Milena</span>
+            <span class="navbar-brand mb-0 h1" id="Milena"><a class="navbar-brand" href="MilenaTea.html">Milena</a></span>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Tea</a>
+                        <a class="nav-link" href="tea.html">Tea</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Food</a>
+                        <a class="nav-link" href="food.html">Food</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
-        <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/91.jpg'); background-repeat: no-repeat; background-size: fit; background-position: center center;">
-            <div class="container">
-                <div class="jumbotron bg-transparent center">
-                    <h1>Milenas Tea for the Night</h1>
-                    <button type="button" class="btn btn-light btn-lg" onclick="myFunction()">click me to Get the Choice of Tea</button>
-                </div>
-            </div>
-            <div>
-                <h1 id="demo"></h1>
+
+        <div class="view" style="background-image: url('https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-050.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+
+            <div class="jumbotron bg-transparent main">
+                <h1 class="display-4">Milenas Website For Decisions</h1>
+                <p class="lead">Because she can't make decisions on her own</p>
             </div>
 
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm section">
+                        <h3>A Litte About Milena</h3>
+                        <p>She is studying Biomedical Engineering at the University of Victoria</p>
+                    </div>
+                    <div class="col-sm section">
+                        <h3>Milenas Likes</h3>
+                        <p>Keegan</p>
+                    </div>
+                    <div class="col-sm section">
+                        <h3>Milenas Dislikes</h3>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
         </div>
+
+
+
 
     </body>
 </html>

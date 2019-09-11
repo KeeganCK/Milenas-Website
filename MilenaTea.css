@@ -9,8 +9,26 @@ header,
   height: 100%;
 }
 
-.jumbotron {
+.tea {
     color: white;
+}
+
+.main {
+    color: black;
+    text-align: center;
+}
+
+.food {
+    color: white;
+    text-align: center;
+}
+
+hr {
+    color: white;
+}
+
+.section {
+    color: black;
 }
 
 #demo {
