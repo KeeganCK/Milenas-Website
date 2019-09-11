@@ -4,7 +4,7 @@ from bottle import route, run, template
 
 @route('/')
 def index():
-    return template('MilenaTea.html')
+    return Bottle.static_file('MilenaTea.html', root="../static/")
 
 if __name__ == '__main__':
     bottle.run(
