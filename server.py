@@ -6,4 +6,10 @@ from bottle import route, run, template
 def index():
     return template('MilenaTea.html')
 
-run(host='localhost', port=8080)
+if __name__ == '__main__':
+    bottle.run(
+        application,
+        host=os.getenv('IP', '0.0.0.0'),
+        port=os.getenv('PORT', '8080'),
+        debug=os.getenv('DEBUG', True)
+    )
