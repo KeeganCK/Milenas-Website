@@ -3,9 +3,9 @@ import bottle
 import os
 
 
-@bottle.route('/')
+@bottle.route('/static/MilenaTea.html')
 def index():
-    return Bottle.static_file('MilenaTea.html', root="../static/")
+    return bottle.static_file('MilenaTea.html', route="../MilenaTea.html")
 
 application = bottle.default_app()
 
