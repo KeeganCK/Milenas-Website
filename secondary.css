@@ -1,0 +1,36 @@
+#Milena {
+    color: white;
+}
+
+.tea {
+    color: white;
+}
+
+.main {
+    color: white;
+    text-align: center;
+}
+
+.food {
+    color: white;
+    text-align: center;
+}
+
+hr {
+    color: white;
+}
+
+.section {
+    color: black;
+    margin-top: 32px;
+}
+
+#demo {
+    color: white;
+    text-align: center;
+}
+
+body, html,
+.view {
+    height: 100%;
+}

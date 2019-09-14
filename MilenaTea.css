@@ -2,19 +2,12 @@
     color: white;
 }
 
-html,
-body,
-header,
-.view {
-  height: 100%;
-}
-
 .tea {
     color: white;
 }
 
 .main {
-    color: black;
+    color: white;
     text-align: center;
 }
 
@@ -29,6 +22,7 @@ hr {
 
 .section {
     color: black;
+    margin-top: 32px;
 }
 
 #demo {
