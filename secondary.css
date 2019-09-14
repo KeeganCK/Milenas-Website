@@ -30,6 +30,16 @@ hr {
     text-align: center;
 }
 
+.footer {
+    color: #4885ed;
+    background-color: #292b2c;
+    padding: 25px;
+}
+
+.facebook {
+    padding-left: 16px;
+}
+
 body, html,
 .view {
     height: 100%;
