@@ -185,9 +185,30 @@ function food(){
         }
 
     }
-
-
-
-
-
 }
+
+
+// To change the color of the jumbotron background on mainpage
+let button = document.getElementById("but");
+let jumbo = document.getElementById("colorChange")
+
+button.addEventListener("click", function() {
+    if (jumbo.style.background == "white") {
+        jumbo.style.background = "red";
+    }
+    else {
+        jumbo.style.background = "white";
+    }
+});
+
+
+//change title color
+let header = document.querySelector("h1");
+
+header.addEventListener("mouseover", function() {
+    header.style.color = "red";
+});
+
+header.addEventListener("mouseout", function() {
+    header.style.color = "white";
+})

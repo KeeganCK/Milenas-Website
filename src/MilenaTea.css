@@ -1,0 +1,39 @@
+html, body{ height:100%; margin:0; }
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#Milena {
+    color: white;
+}
+
+.main {
+    color: white;
+    text-align: center;
+}
+
+.section {
+    color: black;
+    margin-top: 32px;
+}
+
+.footer {
+    color: #4885ed;
+    background-color: #292b2c;
+    padding: 25px;
+    margin-top: auto;
+}
+
+.facebook {
+    padding-left: 16px;
+}
+
+.button {
+    width = 25%
+}
+
+#colorChange {
+    background-color: purple;
+}
