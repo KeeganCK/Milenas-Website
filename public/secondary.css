@@ -1,3 +1,10 @@
+html, body{ height:100%; margin:0; }
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 #Milena {
     color: white;
 }
@@ -12,7 +19,7 @@
 }
 
 .food {
-    color: white;
+    color: black;
     text-align: center;
 }
 
@@ -34,6 +41,7 @@ hr {
     color: #4885ed;
     background-color: #292b2c;
     padding: 25px;
+    margin-top: auto;
 }
 
 .facebook {
