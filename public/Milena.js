@@ -1,3 +1,38 @@
+(function(window, document, undefined){
+
+
+window.onload = init;
+
+  function init(){
+
+
+      let header1 = document.getElementById("header1");
+
+      let p1 = document.querySelector("#p1");
+
+      p1.addEventListener("mouseover", function() {
+          p1.style.color = "red";
+      })
+      p1.addEventListener("mouseout", function() {
+          p1.style.color = "white";
+      })
+      p1.addEventListener("click", function() {
+          alert("Actually... she can...")
+      })
+
+      if(header1 != null){
+
+          header1.addEventListener("mouseover", function() {
+              header1.style.color = "red";
+          });
+
+          header1.addEventListener("mouseout", function() {
+              header1.style.color = "white";
+          });
+      }
+  }
+
+})(window, document, undefined);
 
 
 function myFunction(){
@@ -13,17 +48,6 @@ function myFunction(){
         tea = "Ginger"
     }
     document.getElementById("demo").innerHTML = tea;
-}
-
-function rowAdder(rowCount, food, vegan) {
-    let newRow = foodTable.insertRow(rowCount);
-    let cell1 = newRow.insertCell(0);
-    let cell2 = newRow.insertCell(1);
-    let cell3 = newRow.insertCell(2);
-
-    cell1.innerHTML = rowCount;
-    cell2.innerHTML = food;
-    cell3.innerHTML = vegan;
 }
 
 function food(){
@@ -187,28 +211,15 @@ function food(){
     }
 }
 
-
 // To change the color of the jumbotron background on mainpage
-let button = document.getElementById("but");
-let jumbo = document.getElementById("colorChange")
-
-button.addEventListener("click", function() {
-    if (jumbo.style.background == "white") {
-        jumbo.style.background = "red";
-    }
-    else {
-        jumbo.style.background = "white";
-    }
-});
-
-
-//change title color
-let header = document.querySelector("h1");
-
-header.addEventListener("mouseover", function() {
-    header.style.color = "red";
-});
-
-header.addEventListener("mouseout", function() {
-    header.style.color = "white";
-})
+// let button = document.getElementById("but");
+// let jumbo = document.getElementById("colorChange")
+//
+// button.addEventListener("click", function() {
+//     if (jumbo.style.background == "white") {
+//         jumbo.style.background = "red";
+//     }
+//     else {
+//         jumbo.style.background = "white";
+//     }
+// });
