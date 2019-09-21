@@ -12,13 +12,14 @@ window.onload = init;
 
       p1.addEventListener("mouseover", function() {
           p1.style.color = "red";
-      })
+      });
       p1.addEventListener("mouseout", function() {
           p1.style.color = "white";
-      })
+      });
       p1.addEventListener("click", function() {
-          alert("Actually... she can...")
-      })
+          p1.innerHTML = "Actually... she can, but I can't"
+      });
+
 
       if(header1 != null){
 
@@ -34,27 +35,11 @@ window.onload = init;
 
 })(window, document, undefined);
 
-
-function myFunction(){
-    let tea = "tea"
-    answer = Math.floor(Math.random() * Math.floor(3))
-    if(answer == 0){
-        tea = "Peppermint"
-    }
-    else if (answer == 1){
-        tea = "Chamomile"
-    }
-    else{
-        tea = "Ginger"
-    }
-    document.getElementById("demo").innerHTML = tea;
-}
-
 function food(){
 
     // make code smaller and add rows to table to see what to eat
     function rowAdder(food, vegan) {
-        let newRow = foodTable.insertRow(rowCount);
+        let newRow = foodTable.insertRow(1);
         let cell1 = newRow.insertCell(0);
         let cell2 = newRow.insertCell(1);
         let cell3 = newRow.insertCell(2);

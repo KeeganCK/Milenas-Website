@@ -1,22 +1,34 @@
 let express = require('express');
-
+let bodyParser = require("body-parser");
 let app = express();
+app.use(bodyParser.urlencoded({extended: true}));
 
 let port = process.env.PORT || 8080;
 
+
+
 app.use(express.static("public"));
 app.set("view engine", "ejs")
+
+let teaList = [];
 
 app.get('/', function(req, res){
     res.render("MilenaTea")
 });
 
 app.get("/tea", function(req, res){
-    res.render("tea")
+    res.render("tea", {teaList: teaList})
 });
 
 app.get("/food", function(req, res) {
     res.render("food")
+});
+
+app.post("/addTea", function(req, res) {
+    let newTea = req.body.teas;
+    console.log(newTea);
+    teaList.push(newTea);
+    res.redirect("/tea");
 });
 
 

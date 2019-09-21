@@ -9,6 +9,18 @@ body {
     color: white;
 }
 
+#p1 {
+    cursor: pointer;
+}
+
+.aboutMe {
+    color: white;
+}
+
+a.aboutMe:hover{
+    color: white;
+}
+
 .main {
     color: white;
     text-align: center;
@@ -16,7 +28,7 @@ body {
 
 .section {
     color: black;
-    margin-top: 32px;
+    margin:32px 0px 32px 0px;
 }
 
 .footer {
