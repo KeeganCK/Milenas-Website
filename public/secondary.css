@@ -14,7 +14,14 @@ body {
     text-align: center;
     margin: auto;
     padding-top: 30px;
+}
 
+.table1 {
+    text-align: center;
+}
+
+.font {
+    font-family: Merriweather;
 }
 
 .tea {

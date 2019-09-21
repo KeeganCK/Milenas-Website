@@ -1,134 +1,126 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Food</title>
-        <script src="Milena.js"></script>
-        <link rel="stylesheet" href="secondary.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-            <span class="navbar-brand mb-0 h1" id="Milena"><a class="navbar-brand" href="/">Milena</a></span>
+<%- include ./partials/header%>
+<link rel="stylesheet" href="secondary.css">
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="tea">Tea</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="food">Food</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+<div class="font">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1" id="Milena"><a class="navbar-brand" href="/">Milena</a></span>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="tea">Tea</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="food">Food</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
 
 
 
-        <!-- <div class="view" style="background-image: url('https://hdwallsource.com/img/2014/9/simple-backgrounds-17277-17833-hd-wallpapers.jpg'); background-repeat: no-repeat; background-size: fit; background-position: center center;"> -->
-            <div class="jumbotron bg-transparent food">
-                <h1 class="diplay-4">Milenas Food choices</h1>
-                <hr>
-                <p class="lead">Below are some questions for you to chose, then I will decide what you eat</p>
-            </div>
+    <!-- <div class="view" style="background-image: url('https://hdwallsource.com/img/2014/9/simple-backgrounds-17277-17833-hd-wallpapers.jpg'); background-repeat: no-repeat; background-size: fit; background-position: center center;"> -->
+        <div class="jumbotron bg-transparent food">
+            <h1 class="diplay-4">Milenas Food choices</h1>
+            <hr>
+            <p class="lead">Below are some questions for you to chose, then I will decide what you eat</p>
+        </div>
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <h4>How are you feeling?</h4>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" id="moment1" name="moment">
-                            <label class="for-check-label" for="moment1">Happy</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" id="moment2" name="moment">
-                            <label class="for-check-label" for="moment2">Hangry</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" id="moment3" name="moment">
-                            <label class="for-check-label" for="moment3">Sad</label>
-                        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4>How are you feeling?</h4>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="moment1" name="moment">
+                        <label class="for-check-label" for="moment1">Happy</label>
                     </div>
-                    <div class="col-sm-4">
-                        <h4>When did you last eat food?</h4>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" id="last1" name="last">
-                            <label class="for-check-label" for="last1">Between 0-3 hours ago</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" id="last2" name="last">
-                            <label class="for-check-label" for="last2">Between 4-6 hours ago</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" id="last3" name="last">
-                            <label class="for-check-label" for="last3">Between 7-12 hours ago</label>
-                        </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="moment2" name="moment">
+                        <label class="for-check-label" for="moment2">Hangry</label>
                     </div>
-                    <div class="col-sm-4">
-                        <h4>What day of the week is it??</h4>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" id="week1" name="week">
-                            <label class="for-check-label" for="week1">Weekday</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" id="week2" name="week">
-                            <label class="for-check-label" for="week2">Saturday</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" id="week3" name="week">
-                            <label class="for-check-label" for="week3">Sunday</label>
-                        </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="moment3" name="moment">
+                        <label class="for-check-label" for="moment3">Sad</label>
                     </div>
                 </div>
-
-                <p></p>
-                <p></p>
-
-                <button type="button" class="btn-secondary btn-lg btn-block" onclick="food()">Sumbit Answer</button>
+                <div class="col-sm-4">
+                    <h4>When did you last eat food?</h4>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="last1" name="last">
+                        <label class="for-check-label" for="last1">Between 0-3 hours ago</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="last2" name="last">
+                        <label class="for-check-label" for="last2">Between 4-6 hours ago</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="last3" name="last">
+                        <label class="for-check-label" for="last3">Between 7-12 hours ago</label>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <h4>What day of the week is it??</h4>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="week1" name="week">
+                        <label class="for-check-label" for="week1">Weekday</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="week2" name="week">
+                        <label class="for-check-label" for="week2">Saturday</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="week3" name="week">
+                        <label class="for-check-label" for="week3">Sunday</label>
+                    </div>
+                </div>
             </div>
 
             <p></p>
             <p></p>
 
-            <div class="container">
-                
-                <table class="table table-dark" id="myFoods">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Food</th>
-                            <th scope="col">Vegan?</th>
-                        </tr>
-                    </thead>
-                </table>
-            </div>
-        <!-- </div> -->
+            <button type="button" class="btn-secondary btn-lg btn-block" onclick="food()">Sumbit Answer</button>
+        </div>
+
+        <p></p>
+        <p></p>
+
+        <div class="container">
+
+            <table class="table table-dark" id="myFoods">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Food</th>
+                        <th scope="col">Vegan?</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    <!-- </div> -->
 
 
-        <!-- Footer -->
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <p>Copyright © 2019 Milena Inc</p>
-                    </div>
-                    <div class="col-sm-4">
-                        <p class="contact">Contact:</p>
-                        <img src="Twitter_Logo_Blue.png" alt="" height="50" width="50">
-                        <span>@Milena</span>
-                        <p></p>
-                        <img src="f_logo_RGB-Blue_58.png" alt="" height="35" width="35">
-                        <span class="facebook">@Milena</span>
-                    </div>
-                    <div class="col-sm-4">
-                        <p>More:</p>
-                        <p>Acknowledgements</p>
-                        <p>Achievements</p>
-                    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <p>Copyright © 2019 Milena Inc</p>
+                </div>
+                <div class="col-sm-4">
+                    <p class="contact">Contact:</p>
+                    <img src="Twitter_Logo_Blue.png" alt="" height="50" width="50">
+                    <span>@Milena</span>
+                    <p></p>
+                    <img src="f_logo_RGB-Blue_58.png" alt="" height="35" width="35">
+                    <span class="facebook">@Milena</span>
+                </div>
+                <div class="col-sm-4">
+                    <p>More:</p>
+                    <p>Acknowledgements</p>
+                    <p>Achievements</p>
                 </div>
             </div>
         </div>
-
-    </body>
-</html>
+    </div>
+</div>

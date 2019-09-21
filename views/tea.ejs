@@ -1,84 +1,81 @@
-
-
-<meta charset="utf-8">
-<title>Tea</title>
-<script src="tea.js"></script>
+<%- include ./partials/header%>
 <link rel="stylesheet" href="secondary.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-    <span class="navbar-brand mb-0 h1" id="Milena"><a class="navbar-brand" href="/">Milena</a></span>
+<div class="font">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1" id="Milena"><a class="navbar-brand" href="/">Milena</a></span>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="tea">Tea</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="food">Food</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="tea">Tea</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="food">Food</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-<div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/91.jpg'); background-repeat: no-repeat; background-size: fit; background-position: center center;">
-    <div class="container">
-        <div class="jumbotron bg-transparent center tea">
-            <h1>Milenas Tea for the Night</h1>
-            <button type="button" class="btn btn-light btn-lg" onclick="myFunction()">Click me to Get the Choice of Tea</button>
+    <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/91.jpg'); background-repeat: no-repeat; background-size: fit; background-position: center center;">
+        <div class="container">
+            <div class="jumbotron bg-transparent center tea">
+                <h1>Milenas Tea for the Night</h1>
+                <button type="button" class="btn btn-light btn-lg" onclick="myFunction()">Click me to Get the Choice of Tea</button>
+            </div>
+        </div>
+        <div>
+            <h1 id="demo"></h1>
+        </div>
+        <div class="container1 tea">
+            <h2>Request teas here</h2>
+            <form class="" action="/addTea" method="post">
+                <div class="form-group">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-light bg-dark" type="sumbit">submit</button>
+                        </div>
+                        <input type="text" class="form-control" placeholder="enter tea here" name=teas aria-describedby="basic-addon1">
+                    </div>
+                </div>
+            </form>
+            <table class="table table-dark table1" id="Teas">
+                <thead>
+                    <% for(let i = 0; i < teaList.length; i++) { %>
+                        <tr>
+                            <td scope ="col"> <%= teaList[i] %> </td>
+                        </tr>
+                    <%}%>
+                </thead>
+            </table>
         </div>
     </div>
-    <div>
-        <h1 id="demo"></h1>
-    </div>
-    <div class="container1 tea">
-        <h2>Request teas here</h2>
-        <form class="" action="/addTea" method="post">
-            <div class="form-group">
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <button class="btn btn-outline-light bg-dark" type="sumbit">submit</button>
-                    </div>
-                    <input type="text" class="form-control" placeholder="enter tea here" name=teas aria-describedby="basic-addon1">
+
+
+
+
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <p>Copyright © 2019 Milena Inc</p>
                 </div>
-            </div>
-        </form>
-        <table class="table table-dark container1" id="Teas">
-            <thead>
-                <% for(let i = 0; i < teaList.length; i++) { %>
-                    <tr>
-                        <td scope ="col"> <%= teaList[i] %> </td>
-                    </tr>
-                <%}%>
-            </thead>
-        </table>
-    </div>
-</div>
-
-
-
-
-
-
-<!-- Footer -->
-<div class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
-                <p>Copyright © 2019 Milena Inc</p>
-            </div>
-            <div class="col-sm-4">
-                <p class="contact">Contact:</p>
-                <img src="Twitter_Logo_Blue.png" alt="" height="50" width="50">
-                <span>@Milena</span>
-                <p></p>
-                <img src="f_logo_RGB-Blue_58.png" alt="" height="35" width="35">
-                <span class="facebook">@Milena</span>
-            </div>
-            <div class="col-sm-4">
-                <p>More:</p>
-                <p>Acknowledgements</p>
-                <p>Achievements</p>
+                <div class="col-sm-4">
+                    <p class="contact">Contact:</p>
+                    <img src="Twitter_Logo_Blue.png" alt="" height="50" width="50">
+                    <span>@Milena</span>
+                    <p></p>
+                    <img src="f_logo_RGB-Blue_58.png" alt="" height="35" width="35">
+                    <span class="facebook">@Milena</span>
+                </div>
+                <div class="col-sm-4">
+                    <p>More:</p>
+                    <p>Acknowledgements</p>
+                    <p>Achievements</p>
+                </div>
             </div>
         </div>
     </div>
