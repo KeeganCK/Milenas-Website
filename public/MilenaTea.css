@@ -6,7 +6,7 @@ body {
 }
 
 #Milena {
-    color: white;
+    color: #4885ed;
 }
 
 #p1 {
@@ -19,23 +19,24 @@ body {
 
 .font {
     font-family: Merriweather;
+    background-color: #292b2c;
 }
 
 .aboutMe {
-    color: white;
+    color: #4885ed;
 }
 
 a.aboutMe:hover{
-    color: white;
+    color: #4885ed;
 }
 
 .main {
-    color: white;
+    color: #4885ed;
     text-align: center;
 }
 
 .section {
-    color: black;
+    color: #4885ed;
     margin:32px 0px 32px 0px;
 }
 
@@ -47,6 +48,11 @@ a.aboutMe:hover{
     bottom: 0;
     position: absolute;
     width: 100%;
+    border-top: #4885ed 1px solid;
+}
+
+.navbars {
+    border-bottom: 1px solid #4885ed;
 }
 
 .facebook {
@@ -57,6 +63,19 @@ a.aboutMe:hover{
     width = 25%
 }
 
-#colorChange {
-    background-color: purple;
+.view {
+    border-bottom: 1px solid #4885ed;
+}
+
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:focus .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #4885ed;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-brand.active,
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-text {
+    color: #4885ed;
 }

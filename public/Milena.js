@@ -11,10 +11,10 @@ window.onload = init;
       let p1 = document.querySelector("#p1");
 
       p1.addEventListener("mouseover", function() {
-          p1.style.color = "red";
+          p1.style.color = "rgb(71, 225, 12)";
       });
       p1.addEventListener("mouseout", function() {
-          p1.style.color = "white";
+          p1.style.color = "#4885ed";
       });
       p1.addEventListener("click", function() {
           p1.innerHTML = "Actually... she can, but I can't"
@@ -24,11 +24,11 @@ window.onload = init;
       if(header1 != null){
 
           header1.addEventListener("mouseover", function() {
-              header1.style.color = "red";
+              header1.style.color = "rgb(71, 225, 12)";
           });
 
           header1.addEventListener("mouseout", function() {
-              header1.style.color = "white";
+              header1.style.color = "#4885ed";
           });
       }
   }

@@ -11,17 +11,22 @@ body {
 }
 
 .aboutMe {
-    color: white;
+    color: #4885ed;
 }
 
 a.aboutMe:hover{
-    color: white;
+    color: #4885ed;
 }
 
 .jumbotron {
     margin-top: 32px;
     text-align: center;
-    background-color: white;
+    background-color: #292b2c;
+    color: #4885ed;
+}
+
+hr {
+    border: 0.5px  solid #4885ed;
 }
 
 .footer {
@@ -32,6 +37,24 @@ a.aboutMe:hover{
     bottom: 0;
     position: absolute;
     width: 100%;
+    border-top: #4885ed 1px solid;
+}
+
+.navbars {
+    border-bottom: 1px solid #4885ed;
+}
+
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:focus .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #4885ed;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-brand.active,
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-text {
+    color: #4885ed;
 }
 
 

@@ -3,54 +3,54 @@
 <title>Tea</title>
 
 <div class="font">
-    <nav class="navbar navbar-expand-sm navbar-dark navbar-custom">
-        <span class="navbar-brand mb-0 h1" id="Milena"><a class="navbar-brand" href="/">Milena</a></span>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="tea">Tea</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="food">Food</a>
-                </li>
-            </ul>
-            <span><a class="nav-link aboutMe" href="about">About</a></span>
-        </div>
-    </nav>
-
-    <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/91.jpg'); background-repeat: no-repeat; background-size: fit; background-position: center center;">
-        <div class="container">
-            <div class="jumbotron bg-transparent center tea">
-                <h1>Milenas Tea for the Night</h1>
-                <button type="button" class="btn btn-light btn-lg" onclick="myFunction()">Click me to Get the Choice of Tea</button>
+    <div class="navbars">
+        <nav class="navbar navbar-expand-sm navbar-dark navbar-custom">
+            <span class="navbar-brand mb-0 h1" id="Milena"><a class="navbar-brand" href="/">Milena</a></span>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="tea">Tea</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="food">Food</a>
+                    </li>
+                </ul>
+                <span><a class="nav-link aboutMe" href="about">About</a></span>
             </div>
-        </div>
-        <div>
-            <h1 id="demo"></h1>
-        </div>
-        <div class="container1 tea">
-            <h2>Request teas here</h2>
-            <form class="" action="/addTea" method="post">
-                <div class="form-group">
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <button class="btn btn-outline-light bg-dark" type="sumbit">submit</button>
+        </nav>
+    </div>
+
+    <div>
+        <div class="container back">
+            <div class="center tea">
+                <h1>Milenas Tea for the Night</h1>
+                <button type="button" class="btn btn-dark btn-lg" onclick="myFunction()">Click me to Get the Choice of Tea</button>
+            </div>
+            <div>
+                <h1 id="demo"></h1>
+            </div>
+            <div class="container1 tea">
+                <h2>Request Teas Here</h2>
+                <form class="" action="/addTea" method="post">
+                    <div class="form-group">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="enter tea here" name=teas aria-describedby="basic-addon1">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-light bg-dark" type="sumbit">submit</button>
+                            </div>
                         </div>
-                        <input type="text" class="form-control" placeholder="enter tea here" name=teas aria-describedby="basic-addon1">
                     </div>
-                </div>
-            </form>
-            <table class="table table-dark table1" id="Teas">
-                <thead>
+                </form>
+                <table class="table table-dark table1" id="Teas">
                     <% for(let i = 0; i < teaList.length; i++) { %>
                         <tr>
                             <td scope ="col"> <%= teaList[i] %> </td>
                         </tr>
                     <%}%>
-                </thead>
-            </table>
+                </table>
+            </div>
         </div>
+
     </div>
 
 

@@ -10,7 +10,7 @@ let port = process.env.PORT || 8080;
 app.use(express.static("public"));
 app.set("view engine", "ejs")
 
-let teaList = [];
+let teaList = ["Chamomile", "Ginger", "Peppermint"];
 
 app.get('/', function(req, res){
     res.render("MilenaTea")
@@ -30,7 +30,6 @@ app.get("/about", about = (req, res) => {
 
 app.post("/addTea", function(req, res) {
     let newTea = req.body.teas;
-    console.log(newTea);
     teaList.push(newTea);
     res.redirect("/tea");
 });

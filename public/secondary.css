@@ -1,12 +1,16 @@
-html, body{ height:100%; margin:0; }
-
 body {
-    display: flex;
-    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 #Milena {
     color: white;
+}
+
+.center {
+    text-align: center;
+    padding: 50px;
 }
 
 .container1 {
@@ -18,6 +22,7 @@ body {
 
 .table1 {
     text-align: center;
+    color: #4885ed;
 }
 
 .navbar-custom {
@@ -26,18 +31,21 @@ body {
 
 .font {
     font-family: Merriweather;
+    min-height: 100%;
+    position: relative;
+    background-color: #292b2c;
 }
 
 .tea {
-    color: white;
+    color: #4885ed;
 }
 
 .aboutMe {
-    color: white;
+    color: #4885ed;
 }
 
 a.aboutMe:hover{
-    color: white;
+    color: #4885ed;
 }
 
 .main {
@@ -46,12 +54,17 @@ a.aboutMe:hover{
 }
 
 .food {
-    color: black;
+    color: #4885ed;
     text-align: center;
 }
 
+.questions {
+    color: #4885ed;
+}
+
 hr {
-    color: white;
+    border: 0.5px solid #4885ed;
+    width: 50%;
 }
 
 .section {
@@ -60,22 +73,39 @@ hr {
 }
 
 #demo {
-    color: white;
+    color: #4885ed;
     text-align: center;
 }
+
 
 .footer {
     color: #4885ed;
     background-color: #292b2c;
     padding: 25px;
-    margin-top: auto;
+    position: relative;
+    margin-bottom: 0px;
+    bottom: 0;
+    width: 100%;
+    border-top: #4885ed 1px solid;
+}
+
+.navbars {
+    border-bottom: 1px solid #4885ed;
 }
 
 .facebook {
     padding-left: 16px;
 }
 
-body, html,
-.view {
-    height: 100%;
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:focus .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #4885ed;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-brand.active,
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-text {
+    color: #4885ed;
 }
