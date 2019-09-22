@@ -24,6 +24,10 @@ app.get("/food", function(req, res) {
     res.render("food")
 });
 
+app.get("/about", about = (req, res) => {
+    res.render("about");
+});
+
 app.post("/addTea", function(req, res) {
     let newTea = req.body.teas;
     console.log(newTea);

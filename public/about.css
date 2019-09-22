@@ -1,0 +1,35 @@
+html, body{ height:100%; margin:0; }
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #292b2c;
+}
+
+.font {
+    font-family: Merriweather;
+}
+
+.aboutMe {
+    color: white;
+}
+
+a.aboutMe:hover{
+    color: white;
+}
+
+.jumbotron {
+    margin-top: 32px;
+    text-align: center;
+    background-color: #ccc;
+}
+
+.footer {
+    color: #4885ed;
+    background-color: #292b2c;
+    padding: 25px;
+    margin-top: auto;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
