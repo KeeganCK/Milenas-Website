@@ -20,6 +20,10 @@ body {
     text-align: center;
 }
 
+.navbar-custom {
+    background-color: #292b2c;
+}
+
 .font {
     font-family: Merriweather;
 }
