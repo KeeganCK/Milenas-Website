@@ -14,7 +14,7 @@ window.onload = init;
           p1.style.color = "rgb(71, 225, 12)";
       });
       p1.addEventListener("mouseout", function() {
-          p1.style.color = "#4885ed";
+          p1.style.color = "#eb9834";
       });
       p1.addEventListener("click", function() {
           p1.innerHTML = "Actually... she can, but I can't"
@@ -28,7 +28,7 @@ window.onload = init;
           });
 
           header1.addEventListener("mouseout", function() {
-              header1.style.color = "#4885ed";
+              header1.style.color = "#eb9834";
           });
       }
   }

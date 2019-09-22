@@ -22,7 +22,7 @@ body {
 
 .table1 {
     text-align: center;
-    color: #4885ed;
+    color: #eb9834;
 }
 
 .navbar-custom {
@@ -37,7 +37,7 @@ body {
 }
 
 .tea {
-    color: #4885ed;
+    color: #eb9834;
 }
 
 .aboutMe {
@@ -54,12 +54,16 @@ a.aboutMe:hover{
 }
 
 .food {
-    color: #4885ed;
+    color: #eb9834;
     text-align: center;
 }
 
 .questions {
-    color: #4885ed;
+    color: #eb9834;
+}
+
+.tabless {
+    color: #eb9834;
 }
 
 hr {
@@ -73,7 +77,7 @@ hr {
 }
 
 #demo {
-    color: #4885ed;
+    color: #eb9834;
     text-align: center;
 }
 

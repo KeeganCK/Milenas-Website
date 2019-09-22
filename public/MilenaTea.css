@@ -20,6 +20,7 @@ body {
 .font {
     font-family: Merriweather;
     background-color: #292b2c;
+    height: 100%;
 }
 
 .aboutMe {
@@ -31,12 +32,12 @@ a.aboutMe:hover{
 }
 
 .main {
-    color: #4885ed;
+    color: #eb9834;
     text-align: center;
 }
 
 .section {
-    color: #4885ed;
+    color: #eb9834;
     margin:32px 0px 32px 0px;
 }
 
