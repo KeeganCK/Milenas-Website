@@ -44,6 +44,9 @@ a.aboutMe:hover{
     background-color: #292b2c;
     padding: 25px;
     margin-top: auto;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
 }
 
 .facebook {
